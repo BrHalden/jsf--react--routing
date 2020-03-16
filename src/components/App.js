@@ -21,16 +21,16 @@ export default function App() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link exact to="/" className="nav-link">Home</Nav.Link>
-                        <Nav.Link to="/aboutus" className="nav-link">About</Nav.Link>
+                        <NavLink exact to="/" className="nav-link">Home</NavLink>
+                        <NavLink to="/aboutus" className="nav-link">About</NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
 
             <Container>
                 <Switch>
-                    <Route exact path="/" component="{Home}" />
-                    <Route path="/aboutus" component="{AboutUs}" />
+                    <Route exact path="/" component={Home} />
+                    <Route path="/aboutus" component={AboutUs} />
                 </Switch>
             </Container>
         </Router>
